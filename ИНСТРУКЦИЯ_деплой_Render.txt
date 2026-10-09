@@ -1,0 +1,13 @@
+ИНСТРУКЦИЯ ПО ДЕПЛОЮ САЙТА 1 (Java через Nginx) НА RENDER.COM
+================================================================
+Сайт 1: Двухстраничный Java-проект через Nginx (Docker)
+Тип на Render: Web Service (Docker)
+
+1. Загрузите файлы сайта 1 в репозиторий GitHub (Dockerfile, nginx.conf, pom.xml, папку src/).
+2. Зайдите на https://dashboard.render.com/ -> New + -> Web Service.
+3. Подключите репозиторий сайта 1.
+4. Настройки:
+   - Name: site1-java-nginx
+   - Environment: Docker
+   - Instance Type: Free
+5. Нажмите Create Web Service. Render скомпилирует проект через Maven и запустит его под управлением Nginx.
